@@ -20,7 +20,7 @@ const people = [
     return (
         <View>          
             <FlatList 
-            horizontal= {true}
+            horizontal
             showsHorizontalScrollIndicator= {false}
             data={people}  
             renderItem={({item}) => <Text style={styles.textStyle}>{item.name}</Text>} 
