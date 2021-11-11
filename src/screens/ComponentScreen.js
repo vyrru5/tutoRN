@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default  ComponentScreen = () =>  {
+const ComponentScreen = () =>  {
     return (
         <View style={styles.container} >
             <Text style={styles.text}>Components screens</Text>
@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
     }
 
 })
+
+export default ComponentScreen
