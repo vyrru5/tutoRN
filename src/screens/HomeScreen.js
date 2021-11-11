@@ -4,13 +4,16 @@ import { TouchableOpacity, TouchableWithoutFeedback } from "react-native-gesture
 import tailwind from "tailwind-rn";
 
 
-const HomeScreen = (props) => {
+const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
     <StatusBar barStyle={'dark-content'} />
     <Text style={styles.text}>Accueil</Text>
-    <Button title="Goto component" onPress={() => { props.navigation.navigate('Component'); console.log('click on BTN component')}} />
-    <Button title="Goto list view " onPress={() => props.navigation.navigate('List')} />
+    <Button title="Goto component" onPress={() => { navigation.navigate('Component'); console.log('click on BTN component')}} />
+    <Button title="Goto list view " onPress={() => navigation.navigate('List')} />
+    <Button title="Goto Image view " onPress={() => navigation.navigate('Image')} />
+
+
 
 <View style={tailwind('pt-12 items-center')}>
       <View style={tailwind('bg-blue-200 rounded-full px-3 py-1 items-center')}>
