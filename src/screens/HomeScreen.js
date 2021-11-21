@@ -17,7 +17,7 @@ const HomeScreen = ({navigation}) => {
 
 <View style={tailwind('pt-12 items-center')}>
       <View style={tailwind('bg-blue-200 rounded-full px-3 py-1 items-center')}>
-      <Text style={tailwind('text-blue-800 font-semibold')}>V0.1</Text>
+      <Text style={tailwind('text-blue-800 font-semibold')}>V0.1.1</Text>
     </View>
 </View>
 
